@@ -2,3 +2,7 @@ name: The_Entire_Server_Plugin
 version: '${project.version}'
 main: com.aadhavan.the_entire_server_plugin.Main
 api-version: '1.20'
+commands:
+  gun:
+    description: Gives you 3 guns to shoot entities with!
+    usage: /<command>
