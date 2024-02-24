@@ -5,4 +5,33 @@ api-version: '1.20'
 commands:
   gun:
     description: Gives you 3 guns to shoot entities with!
-    usage: /<command>
+  kick:
+    description: Kicks a player from the server!
+  ban:
+    description: Bans a player from the server!
+  mute:
+    description: Mutes a player from the server!
+  unban:
+    description: Unbans a player from the server!
+  ipban:
+    description: Bans a player's IP from the server!
+  vanish:
+    description: Makes non-staff players not be able to see you!
+    aliases:
+      - v
+  togglecarry:
+    description: Makes any entity that the player interacts on, sit on the player.
+    aliases:
+      - tc
+  message:
+    description: Message a player privately.
+    aliases:
+      - msg
+  reply:
+    description: Reply to a player privately.
+    aliases:
+      - r
+  spawnhologram:
+    description: Spawns a hologram.
+    aliases:
+      - sh

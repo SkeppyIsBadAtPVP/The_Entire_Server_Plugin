@@ -27,7 +27,7 @@ public class Gun_Listener implements Listener {
             Player player = e.getPlayer();
             ItemStack fireball_launcher = new ItemStack(Material.NETHERITE_HOE);
             ItemMeta fireball_launcherItemMeta = fireball_launcher.getItemMeta();
-            fireball_launcherItemMeta.setDisplayName(ChatColor.RED +  "Fireball Launcher" + ChatColor.BOLD);
+            fireball_launcherItemMeta.setDisplayName(ChatColor.RED  + "Fireball Launcher" );
             fireball_launcherItemMeta.addEnchant(Enchantment.DURABILITY, 100, true);
             fireball_launcherItemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
             fireball_launcherItemMeta.isUnbreakable();
@@ -49,11 +49,12 @@ public class Gun_Listener implements Listener {
             snowball_launcherItemMeta.isUnbreakable();
             snowball_launcher.setItemMeta(snowball_launcherItemMeta);
 
-            if(e.getItem().equals(fireball_launcher)){
-                player.launchProjectile(Fireball.class);
-                player.sendMessage(ChatColor.GREEN + "BOOM!");
-            } else if (e.getItem().equals(trident_launcher)){
+
+            if (e.getItem().equals(trident_launcher)) {
                 player.launchProjectile(Trident.class);
+                player.sendMessage(ChatColor.GREEN + "BOOM!");
+            } else if(e.getItem().equals(fireball_launcher)){
+                player.launchProjectile(Fireball.class);
                 player.sendMessage(ChatColor.GREEN + "BOOM!");
             } else if (e.getItem().equals(snowball_launcher)){
                 player.launchProjectile(Snowball.class);
